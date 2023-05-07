@@ -1,0 +1,537 @@
+
+:root {
+  --img-header: url(./img/img-header.jpg);
+  --font-primary: "Roboto", sans-serif;
+  --font-size-title: 4em;
+  --font-secundary: "Roboto", sans-serif;
+  --font-size-secudanry: 2em;
+  --color-font-primary: #ffffff;
+  --color-font-secundary: #ffffff;
+  --img-pratos: url(./img/img-pratos.jpg);
+  --img-entrega: url(./img/entregador.jpg);
+  --img-quem-somos: url(./img/mulher-carrinho.jpg);
+  --img-teste: url(./img/pexels-mart-production-7890010.jpg);
+  --img-footer: url(./img/img-footer.jpg);
+  --img-logo-mobile: url(./img/logo-mobile.jpg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: var(--img-header);
+  background-position: center;
+  background-size: cover;
+}
+
+.container-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12vw;
+  height: 25vh;
+}
+
+.container-logo img {
+  width: 100%;
+  height: 100%;
+}
+
+.titulo-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  margin-top: 30%;
+  padding: 5vh;
+  height: 20%;
+  width: auto;
+  margin: 5vh;
+}
+
+.titulo-header h1 {
+  display: flex;
+  font-size: var(--font-size-title);
+  font-family: var(--font-primary);
+  color: var(--color-font-primary);
+}
+.titulo-header p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-secundary);
+  color: var(--color-font-secundary);
+  font-size: var(--font-size-secudanry);
+}
+
+.nav-container .itens-cabecalho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  padding: 1%;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 800px;
+  background-color: rgba(10, 10, 10, 0.5);
+}
+
+.nav-container .itens-cabecalho p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  font-size: var(--font-size-secudanry);
+}
+.nav-container .itens-cabecalho a {
+  display: flex;
+  text-decoration: none;
+  color: var(--color-font-secundary);
+}
+.nav-container .itens-cabecalho p:hover {
+  text-decoration: underline #ffffff;
+}
+
+#servicos {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container-entregas {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: var(--img-entrega);
+  background-position: center;
+  background-size: cover;
+}
+
+.container-descricao-entrega {
+  background-color: rgba(22, 21, 21, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.titulo-entregas {
+  text-align: center;
+  font-family: var(--font-primary);
+  font-size: var(--font-size-title);
+  color: var(--color-font-primary);
+  margin: 2rem;
+  
+}
+
+.descricao-entrega {
+  text-align: center;
+  font-family: var(--font-secundary);
+  font-size: var(--font-size-secudanry);
+  color: var(--color-font-secundary);
+  line-height: 1.5;
+}
+
+.container-pratos {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-image: var(--img-pratos);
+  background-position: center;
+  background-size: cover;
+  /* background-color: rgba(22, 21, 21, 0.5); */
+}
+
+.container-descricao-pratos {
+  background-color: rgba(22, 21, 21, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.titulo-pratos {
+  text-align: center;
+  font-family: var(--font-primary);
+  font-size: var(--font-size-title);
+  color: var(--color-font-primary);
+  margin: 50px;
+  padding: 30px;
+}
+
+.descricao-pratos {
+  text-align: center;
+  font-family: var(--font-secundary);
+  font-size: var(--font-size-secudanry);
+  color: var(--color-font-secundary);
+  line-height: 1.5;
+}
+
+#quem-somos {
+  background-image: var(--img-quem-somos);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-quem-somos {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container-descricao-quem-somos {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titulo-quem-somos {
+  font-family: var(--font-primary);
+  font-size: 2.5rem;
+  color: var(--color-font-primary);
+  margin-bottom: 2rem;
+}
+
+.descricao-quem-somos {
+  font-family: var(--font-secundary);
+  font-size: 1.5rem;
+  color: var(--color-font-secundary);
+  line-height: 1.3;
+  margin-bottom: 2rem;
+}
+
+#duvidas {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.container-duvidas {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: var(--img-footer);
+  background-position: center;
+  background-size: cover;
+}
+
+#duvidas .container-forms {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+  height: 100%;
+  margin-left: 30px;
+  max-width: 1280px;
+}
+
+#msg-alerta,
+#msg-enviado {
+  color: red;
+  background-color: none;
+  font-family: var(--font-secundary);
+  font-size: var(--font-size-title);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2rem;
+  border-radius: 5px;
+  padding: 1%;
+}
+
+#msg-enviado {
+  color: rgb(43, 109, 6);
+}
+
+#duvidas .container-forms form {
+  width: 70%;
+  height: 100%;
+  padding: 40px;
+}
+
+#duvidas .container-forms form h1 {
+  text-align: center;
+  font-size: 30px;
+  color: #000000;
+}
+
+#duvidas .container-forms form p {
+  text-align: center;
+  margin: 20px 0;
+  font-size: var(--font-size-secudanry);
+}
+
+#duvidas .container-forms .input-single {
+  position: relative;
+  margin: 30px 0;
+}
+
+#duvidas .container-forms .input-single label {
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  transition: all 0.2s;
+  cursor: text;
+}
+
+#duvidas .container-forms .input-single .input {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #000000;
+  padding: 5px;
+  font-size: 17px;
+  background-color: inherit;
+  outline: none;
+}
+
+#duvidas .container-forms .input-single .input:focus ~ label,
+#duvidas .container-forms .input-single .input:valid ~ label {
+  transform: translateY(-24px);
+  font-size: 12px;
+  color: #000000;
+}
+
+#duvidas .container-forms .btn {
+  width: 100%;
+  text-align: center;
+}
+
+#duvidas .container-forms form input[type="submit"] {
+  padding: 10px 40px;
+  border: 0;
+  border-radius: 10px;
+  background-color: #000000;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.alert {
+  margin: 2%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+  background-color: #e7a7a7; 
+  margin-bottom: 15px;
+  color: #fc0000;
+  border-radius: 5px;
+}
+
+#duvidas .redes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
+  height: 100%;
+  order: 2;
+  margin-left: 5%;
+}
+
+#duvidas .container-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  width: 50%;
+  height: 50%;
+  padding: 7%;
+  margin: 5%;
+}
+
+#duvidas .redes .container-social .facebook img,
+#duvidas .redes .container-social .insta img {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#duvidas .redes .container-social .facebook a,
+#duvidas .redes .container-social .insta a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#dev-footer {
+  font-size: 1.5rem;
+  margin-top: 2%;
+  text-decoration: none;
+  color: #000000;
+}
+
+#dev-footer:hover {
+  text-decoration: underline;
+}
+
+#duvidas .endereco {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  order: 3;
+  background-color: #978c83;
+}
+
+#duvidas .endereco p {
+  text-align: center;
+  font-size: var(--font-size-secudanry);
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 800px) {
+  .nav-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .nav-container .titulo-header {
+    flex-direction: column;
+    right: 30px;
+    align-items: center;
+    height: 30%;
+  }
+
+  .nav-container .titulo-header h1 {
+    display: flex;
+    text-align: center;
+    white-space: pre-wrap;
+    margin-bottom: 5%;
+    margin-right: 10%;
+    font-size: 30px;
+    white-space: nowrap;
+  }
+
+  .nav-container .logo {
+    margin: 25px;
+    justify-content: center;
+    padding: 0;
+    margin-bottom: 15vh;
+  }
+
+  .nav-container .logo img {
+    max-width: 20vh;
+    max-height: 15vh;
+  }
+
+  .container-logo img {
+    width: 29vw;
+    height: 15vh;
+}
+
+  .nav-container .itens-cabecalho {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    height: 5vh;
+  }
+
+  .nav-container .itens-cabecalho p {
+    font-size: 20px;
+  }
+
+  #entregas .container-entregas {
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #entregas .container-entregas img {
+    width: 100%;
+  }
+  #entregas .container-entregas .descricao-entrega {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    text-indent: 0;
+  }
+
+  #pratos .container-pratos {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  #pratos .container-pratos .titulo-pratos {
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+    font-size: 30px;
+    order: 0;
+  }
+
+  #pratos .container-pratos .pratos-img {
+    max-height: 500px;
+  }
+
+  #pratos .container-pratos .pratos-img img {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    order: 1;
+  }
+
+  #quem-somos {
+    width: 100vw;
+  }
+
+  #duvidas {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #duvidas .container-forms {
+    width: 70%;
+  }
+  #duvidas .container-forms p {
+    font-size: 20px;
+  }
+}
