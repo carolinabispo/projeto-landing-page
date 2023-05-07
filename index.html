@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4Food | Supermercado online</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <div class="nav-container">
+          <div class="container-logo">
+            <img src="./assets/img/logo-mobile.jpg" alt="logomarca" />
+          </div>
+          <div class="titulo-header">
+            <h1>Bem vindo ao 4Food!</h1>
+            <p>Aqui você consegue comer e com qualidade sem sair de casa.</p>
+          </div>
+          <div class="itens-cabecalho">
+            <p><a href="#servicos">Serviços</a></p>
+            <p><a href="#pratos">Pratos semanais</a></p>
+            <p><a href="#quem-somos">Quem somos</a></p>
+            <p><a href="#duvidas">Contato</a></p>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="servicos">
+          <div class="container-entregas">
+            <div class="container-descricao-entrega">
+              <h1 class="titulo-entregas">Rápido e de confiança</h1>
+              <p class="descricao-entrega">
+                A 4food oferece um serviço de entregas rápido e eficiente para
+                que você possa fazer suas compras com total comodidade e
+                praticidade. Com opções de entregas expressas, você receberá
+                seus produtos frescos e de qualidade em um curto espaço de
+                tempo.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="pratos">
+          <div class="container-pratos">
+            <div class="container-descricao-pratos">
+              <h1 class="titulo-pratos">Praticidade e conforto</h1>
+              <p class="descricao-pratos">
+                <br />Está em busca de praticidade na hora das refeições, mas
+                sem abrir mão da alimentação saudável? <br />
+                O 4food agora oferece entregas semanais de marmitas saudáveis,
+                preparadas com ingredientes frescos e selecionados.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="quem-somos">
+          <div class="container-quem-somos">
+            <div class="container-descricao-quem-somos">
+              <h1 class="titulo-quem-somos">Conheça a 4food</h1>
+              <p class="descricao-quem-somos">
+                Somos uma iniciativa de uma grande rede de supermercados, oferecendo praticidade e conveniência aos clientes através do aplicativo 4Food. Faça suas compras de supermercado e peça comidas prontas semanalmente, de forma rápida e fácil. Entregamos tudo em sua casa, eliminando filas e preocupações com refeições diárias. Com apenas alguns cliques, simplificamos sua rotina. Experimente agora o 4Food e descubra como tornamos sua vida mais fácil.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <section id="duvidas">
+          <div class="container-duvidas">
+            <div class="container-forms">
+              <form action="" id="cadUser">
+                <h1>Alguma dúvida ou problema?</h1>
+                <p>Entre em contato preenchendo o formulário abaixo:</p>
+                <div class="input-single">
+                  <input type="text" id="nome-box" class="input" />
+                  <label for="nome-box">Nome completo</label>
+                </div>
+
+                <div class="input-single">
+                  <input type="email" id="email-box" class="input" />
+                  <label for="email-box">Seu email</label>
+                </div>
+
+                <div class="input-single">
+                  <input type="text" id="phone-box" class="input" />
+                  <label for="phone-box">Seu telefone</label>
+                </div>
+
+                <div class="btn" id="refDiv" onclick="createDiv()">
+                  <input type="submit" value="Enviar" />
+                </div>
+              </form>
+            </div>
+            <div class="endereco" id="teste">
+              <p>
+                Estamos localizados no seguinte endereço:<br />
+                Rua: xxxx <br />
+                nº yyy<br />
+                Bairro: zzz<br />
+                Cidade/Estado
+              </p>
+            </div>
+            <div class="redes" >
+              <div class="container-social">
+                <div class="facebook">
+                  <a href="https://pt-br.facebook.com/" target="_blank"
+                    ><img src="./assets/img/facebook.png" alt="logo-facebook" />
+                    <p>Facebook</p></a
+                  >
+                </div>
+
+                <div class="insta">
+                  <a href="https://www.instagram.com/" target="_blank"
+                    ><img
+                      src="./assets/img/instagram.png"
+                      alt="-logo-instagram"
+                    />
+                    <p>Instagram</p></a
+                  >
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          <!-- <span id="dev-footer">© Developed by Carolina Bispo, 2023.</span> -->
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>
